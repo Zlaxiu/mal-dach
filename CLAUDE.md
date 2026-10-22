@@ -1,0 +1,1 @@
+to motyw WordPress, z Tailwindem, teksty po polsku

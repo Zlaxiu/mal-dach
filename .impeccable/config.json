@@ -1,0 +1,184 @@
+{
+  "buildPath": "code",
+  "hook": {
+    "enabled": true,
+    "limits": {
+      "maxFindings": 5,
+      "maxChars": 8000
+    }
+  },
+  "detector": {
+    "extensions": [
+      {
+        "ext": ".php",
+        "engine": "html"
+      }
+    ],
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/*.html"
+        ],
+        "createdAt": "2026-10-22T11:34:22.024Z",
+        "reason": "Agent: jednorazowe szkice HTML rundy decyzji kierunku (zamkniętej); budowa strony nie przejmuje ich kodu"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/*.html"
+        ],
+        "createdAt": "2026-10-22T11:34:22.241Z",
+        "reason": "Agent: jednorazowe szkice HTML rundy decyzji kierunku (zamkniętej); budowa strony nie przejmuje ich kodu"
+      },
+      {
+        "rule": "skipped-heading",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/*.html"
+        ],
+        "createdAt": "2026-10-22T11:34:22.612Z",
+        "reason": "Agent: jednorazowe szkice HTML rundy decyzji kierunku (zamkniętej); budowa strony nie przejmuje ich kodu"
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/*.html"
+        ],
+        "createdAt": "2026-10-22T11:34:22.848Z",
+        "reason": "Agent: jednorazowe szkice HTML rundy decyzji kierunku (zamkniętej); budowa strony nie przejmuje ich kodu"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/*.html"
+        ],
+        "createdAt": "2026-10-22T11:34:23.096Z",
+        "reason": "Agent: jednorazowe szkice HTML rundy decyzji kierunku (zamkniętej); budowa strony nie przejmuje ich kodu"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "makieta/index.html"
+        ],
+        "createdAt": "2026-10-22T14:01:00.191Z",
+        "reason": "Agent: zmierzone w renderze 1440 – tekst w sekcjach z tłem ma ≥20px wcięcia bocznego (padding .wrap) i ≥64px pionowo (górny pasek 8px/20px), w kartach 24–32px, wiersz stopki pt 24px; detektor ocenia pudełko przezroczystego .wrap i zdjęcia celowo dosunięte do krawędzi kart"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/*.html"
+        ],
+        "createdAt": "2026-10-22T14:17:19.223Z",
+        "reason": "Agent: jednorazowe szkice HTML rundy decyzji kierunku (zamkniętej), każdy w kroju odrzuconego kierunku; DESIGN.md opisuje zbudowaną stronę, nie szkice"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#fff1c2",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:43.673Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#4a3500",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:44.348Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#4a3a10",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:44.987Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ffe08a",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:45.617Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(255, 241, 194)",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:46.156Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(74, 53, 0)",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:46.870Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(74, 58, 16)",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:47.603Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(255, 224, 138)",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:48.168Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "3px",
+        "files": [
+          "makieta/index.html",
+          "makieta/src/app.css"
+        ],
+        "createdAt": "2026-10-22T14:45:48.658Z",
+        "reason": "Agent: tymczasowe znaczniki [DO UZUPEŁNIENIA] (.todo) – DESIGN.md opisuje je jako konwencję treści, nie tokeny; znikają przed publikacją"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(0, 0, 0)",
+        "files": [
+          "makieta/index.html"
+        ],
+        "createdAt": "2026-10-22T14:46:24.433Z",
+        "reason": "Agent: zmierzone w renderze – obramowania 'Zamów wycenę' mają currentColor (#16212b lub #fff), link w menu ma border 0px; czarnej krawędzi nie ma"
+      }
+    ]
+  }
+}

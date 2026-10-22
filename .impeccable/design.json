@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-22T16:30:00+02:00",
+  "title": "Design System: Mal-Dach",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Granat-Antracyt", "canonical": "#16212b", "tonalRamp": ["#0b1218", "#16212b", "#26323d", "#3b4752", "#5a6773", "#7f8b96", "#b9c4cd", "#e6ebef"] },
+      "ink-soft": { "role": "neutral", "displayName": "Stonowany Granat", "canonical": "#3b4752", "tonalRamp": ["#0b1218", "#16212b", "#26323d", "#3b4752", "#5a6773", "#7f8b96", "#b9c4cd", "#e6ebef"] },
+      "ink-raised": { "role": "neutral", "displayName": "Granat Podniesiony", "canonical": "#24323e", "tonalRamp": ["#0b1218", "#16212b", "#24323e", "#3b4752", "#5a6773", "#7f8b96", "#b9c4cd", "#e6ebef"] },
+      "night": { "role": "neutral", "displayName": "Noc", "canonical": "#16212b", "tonalRamp": ["#0b1218", "#16212b", "#26323d", "#3b4752", "#5a6773", "#7f8b96", "#b9c4cd", "#e6ebef"] },
+      "night-soft": { "role": "neutral", "displayName": "Szron", "canonical": "#b9c4cd", "tonalRamp": ["#1c252d", "#323e48", "#4d5964", "#6a7782", "#8b98a3", "#b9c4cd", "#d6dee4", "#eef2f5"] },
+      "paper": { "role": "neutral", "displayName": "Papier", "canonical": "#ffffff", "tonalRamp": ["#1f2224", "#3a3e41", "#5a5f63", "#7e8387", "#a3a8ac", "#c9cdd0", "#e9ecee", "#ffffff"] },
+      "mist": { "role": "neutral", "displayName": "Mgła", "canonical": "#eef1f3", "tonalRamp": ["#1d2328", "#353e45", "#525c64", "#727d86", "#98a2aa", "#c0c8ce", "#d5dbe0", "#eef1f3"] },
+      "line": { "role": "neutral", "displayName": "Linia", "canonical": "#d5dbe0", "tonalRamp": ["#1d2328", "#353e45", "#525c64", "#727d86", "#98a2aa", "#c0c8ce", "#d5dbe0", "#eef1f3"] },
+      "brand": { "role": "primary", "displayName": "Czerwień Marki", "canonical": "#fc3030", "tonalRamp": ["#3b0709","#6a0d11","#9a1419","#c41a21","#d91f26","#fc3030","#ff9a9a","#ffe5e5"] },
+      "accent": { "role": "primary", "displayName": "Czerwień Akcji", "canonical": "#d91f26", "tonalRamp": ["#3b0709","#6a0d11","#9a1419","#c41a21","#d91f26","#fc3030","#ff9a9a","#ffe5e5"] },
+      "accent-hover": { "role": "primary", "displayName": "Ciemna Czerwień", "canonical": "#b5161d", "tonalRamp": ["#3b0709","#6a0d11","#9a1419","#c41a21","#d91f26","#fc3030","#ff9a9a","#ffe5e5"] },
+      "error": { "role": "neutral", "displayName": "Błąd", "canonical": "#b42318", "tonalRamp": ["#3d0a06", "#6b130c", "#8f1b12", "#b42318", "#d9473a", "#ec7a70", "#f5aaa3", "#fdeeec"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Wyłącznie H1 w hero: wąski wersalik Archivo (wdth 72), dwie linie." },
+      "headline": { "displayName": "Headline", "purpose": "Nagłówek każdej sekcji, wąski wersalik; pas CTA clamp(2.25rem, 4.5vw, 3.75rem)." },
+      "numeral": { "displayName": "Numeral", "purpose": "Cyfry kroków w „Jak pracujemy”; wynik kalkulatora 3rem bez wersalików." },
+      "title-display": { "displayName": "Title Display", "purpose": "Tytuły kart usług; większe stopnie: znak słowny 1.75rem, panele i stopka 1.875rem, nagłówek formularza 2rem." },
+      "title": { "displayName": "Title", "purpose": "Podtytuły w treści w normalnej szerokości: powody, nazwy kroków." },
+      "body-lg": { "displayName": "Body Large", "purpose": "Leady sekcji i zdanie w hero, 44–52ch." },
+      "body": { "displayName": "Body", "purpose": "Tekst ciągły, maks. około 70ch." },
+      "button": { "displayName": "Button", "purpose": "Treść przycisków; 1.125rem w dużym wariancie." },
+      "label": { "displayName": "Label", "purpose": "Etykiety pól, legenda chipów, podpisy zdjęć, górny pasek." }
+    },
+    "shadows": [
+      { "name": "lift-over-photo", "value": "0 24px 60px rgb(15 24 32 / 0.35)", "purpose": "Biały formularz wyceny unoszący się nad zdjęciem w hero." },
+      { "name": "knob", "value": "0 4px 14px rgb(15 24 32 / 0.25)", "purpose": "Okrągła gałka suwaka przed/po nad zdjęciem." },
+      { "name": "dropdown", "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)", "purpose": "Menu mobilne rozwinięte pod nawigacją." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Wejścia, stany interfejsu, wciśnięcie przycisku (skill animate)." },
+      { "name": "ease-in-out", "value": "cubic-bezier(0.77, 0, 0.175, 1)", "purpose": "Ruch z miejsca na miejsce: samoczynne przeciągnięcie suwaka przed/po." },
+      { "name": "press", "value": "transform 160ms ease-out; scale(0.97)", "purpose": "Wciśnięcie przycisku (:active)." },
+      { "name": "state-color", "value": "150ms ease", "purpose": "Zmiana tła, obramowania i podkreślenia przy najechaniu lub fokusie." },
+      { "name": "ui-toggle", "value": "200ms ease-out (wyjście menu 150ms)", "purpose": "FAQ (grid-template-rows + opacity), chevron, menu mobilne, dolny pasek, strzałka źródeł w stopce." },
+      { "name": "reveal", "value": "opacity + translateY(16px), 500ms ease-out, stagger 60ms", "purpose": "Jednorazowe wejście elementów sekcji (IntersectionObserver, threshold 0.1, rootMargin -8%)." },
+      { "name": "hero-rise", "value": "opacity + translateY(16px), 500ms ease-out, delay 80ms + i × 60ms", "purpose": "Jednorazowe wejście hero przy ładowaniu (animacja CSS)." },
+      { "name": "compare-hint", "value": "@property --pos 50% → 34% → 64% → 50%, 1200ms ease-in-out, start 550ms po wejściu w 60% widoku", "purpose": "Jedyny autorski moment: suwak raz sam się przeciąga; przerywa go dotknięcie lub ruch suwaka." },
+      { "name": "reduced-motion", "value": "opacity 200ms ease, bez przesunięć", "purpose": "Wariant dla prefers-reduced-motion: reduce; podpowiedź suwaka wyłączona." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Przycisk akcji (telefon)",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Czerwona pigułka (czerwień akcji) z białym tekstem; tylko dla akcji telefonu.",
+      "html": "<a class=\"ds-btn ds-btn-accent\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z\"/></svg>Zadzwoń</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 3.25rem; padding: 0.85rem 1.6rem; border-radius: 999px; font-family: Archivo, ui-sans-serif, system-ui, sans-serif; font-weight: 700; line-height: 1.1; text-decoration: none; cursor: pointer; border: 0; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 150ms ease, border-color 150ms ease, color 150ms ease; } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 3px solid var(--color-accent, #d91f26); outline-offset: 3px; } .ds-btn-accent { background: var(--color-accent, #d91f26); color: var(--color-ink, #16212b); } @media (hover: hover) and (pointer: fine) { .ds-btn-accent:hover { background: var(--color-accent-hover, #b5161d); } }"
+    },
+    {
+      "name": "Przycisk granatowy",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Drugi poziom akcji: wysłanie formularza, „Dodaj do zapytania”, „Wycena”.",
+      "html": "<button class=\"ds-btn-ink\" type=\"button\">Wyślij zapytanie</button>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0.85rem 1.6rem; border-radius: 999px; border: 0; background: var(--color-ink, #16212b); color: #fff; font-family: Archivo, ui-sans-serif, system-ui, sans-serif; font-weight: 700; line-height: 1.1; cursor: pointer; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 150ms ease; } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 3px solid var(--color-accent, #d91f26); outline-offset: 3px; } @media (hover: hover) and (pointer: fine) { .ds-btn-ink:hover { background: #24323e; } }"
+    },
+    {
+      "name": "Przycisk konturowy na granacie",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "„Zamów wycenę” obok przycisku telefonu; obramowanie w kolorze tekstu.",
+      "html": "<div class=\"ds-ghost-stage\"><a class=\"ds-btn-ghost\" href=\"#\">Zamów wycenę</a></div>",
+      "css": ".ds-ghost-stage { background: var(--color-night, #16212b); padding: 1.5rem; } .ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 3.75rem; padding: 1rem 1.9rem; border-radius: 999px; border: 2px solid currentColor; color: #fff; background: transparent; font-family: Archivo, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 700; line-height: 1.1; text-decoration: none; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 150ms ease; } .ds-btn-ghost:active { transform: scale(0.97); } .ds-btn-ghost:focus-visible { outline: 3px solid var(--color-accent, #d91f26); outline-offset: 3px; } @media (hover: hover) and (pointer: fine) { .ds-btn-ghost:hover { background: rgb(255 255 255 / 0.12); } }"
+    },
+    {
+      "name": "Pole formularza",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Pole z etykietą nad nim; fokus w czerwieni akcji, ciemnoczerwone obramowanie błędu.",
+      "html": "<label class=\"ds-field-wrap\"><span class=\"ds-label\">Telefon</span><input class=\"ds-field\" type=\"tel\"></label>",
+      "css": ".ds-field-wrap { display: block; font-family: Archivo, ui-sans-serif, system-ui, sans-serif; color: var(--color-ink, #16212b); } .ds-label { display: block; margin-bottom: 0.25rem; font-size: 0.875rem; font-weight: 600; } .ds-field { width: 100%; min-height: 3rem; padding: 0.7rem 0.9rem; background: #fff; border: 1.5px solid var(--color-line, #d5dbe0); border-radius: 6px; font: inherit; color: inherit; transition: border-color 150ms ease; } .ds-field::placeholder { color: #6b7884; } .ds-field:focus-visible { outline: 3px solid color-mix(in srgb, #d91f26 55%, transparent); outline-offset: 0; border-color: var(--color-accent, #d91f26); } .ds-field[aria-invalid=\"true\"] { border-color: #b42318; }"
+    },
+    {
+      "name": "Chip usługi",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox wyboru usługi w formularzu wyceny; zaznaczony = granat.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Mycie dachu</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Malowanie elewacji</span></label></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; font-family: Archivo, ui-sans-serif, system-ui, sans-serif; color: var(--color-ink, #16212b); } .ds-chip { position: relative; } .ds-chip input { position: absolute; opacity: 0; pointer-events: none; } .ds-chip span { display: inline-flex; align-items: center; min-height: 2.25rem; padding: 0.35rem 0.8rem; border: 1.5px solid var(--color-line, #d5dbe0); border-radius: 999px; font-size: 1rem; cursor: pointer; background: #fff; transition: background-color 150ms ease, border-color 150ms ease; } .ds-chip input:checked + span { background: var(--color-ink, #16212b); border-color: var(--color-ink, #16212b); color: #fff; } .ds-chip input:focus-visible + span { outline: 3px solid var(--color-accent, #d91f26); outline-offset: 2px; } @media (hover: hover) and (pointer: fine) { .ds-chip span:hover { border-color: var(--color-ink, #16212b); } }"
+    },
+    {
+      "name": "Karta usługi",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "Cała karta jest linkiem do formularza; zdjęcie, wąski wersalik, link ze strzałką.",
+      "html": "<a class=\"ds-card\" href=\"#\"><div class=\"ds-card-img\"></div><div class=\"ds-card-body\"><h3 class=\"ds-card-title\">Mycie dachów</h3><p class=\"ds-card-text\">Usuwamy mech, glony i brud z dachówki i blachy.</p><span class=\"ds-card-cta\">Zapytaj o wycenę <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></div></a>",
+      "css": ".ds-card { display: block; max-width: 22rem; overflow: hidden; border-radius: 6px; background: var(--color-mist, #eef1f3); color: var(--color-ink, #16212b); text-decoration: none; font-family: Archivo, ui-sans-serif, system-ui, sans-serif; } .ds-card-img { aspect-ratio: 4 / 3; background: linear-gradient(160deg, #7f8b96, #3b4752); } .ds-card-body { padding: 1.5rem; } .ds-card-title { margin: 0; font-size: 1.5rem; font-weight: 800; font-stretch: 72%; text-transform: uppercase; letter-spacing: 0.005em; line-height: 1; } .ds-card-text { margin: 0.5rem 0 0; color: var(--color-ink-soft, #3b4752); line-height: 1.6; } .ds-card-cta { margin-top: 1rem; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.25em; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); transition: text-decoration-color 150ms ease; } .ds-card:focus-visible { outline: 3px solid var(--color-accent, #d91f26); outline-offset: 3px; } @media (hover: hover) and (pointer: fine) { .ds-card:hover .ds-card-cta { text-decoration-color: currentColor; } }"
+    },
+    {
+      "name": "Nawigacja",
+      "kind": "nav",
+      "refersTo": "nav-header",
+      "description": "Przyklejony biały pasek: znak słowny, linki, przycisk akcji.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-nav-mark\">Mal-Dach</span><ul class=\"ds-nav-links\"><li><a href=\"#\">Usługi</a></li><li><a href=\"#\">Przed i po</a></li><li><a href=\"#\">Realizacje</a></li></ul><a class=\"ds-nav-cta\" href=\"#\">Zadzwoń</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 4.5rem; padding: 0 1.25rem; background: rgb(255 255 255 / 0.95); border-bottom: 1px solid var(--color-line, #d5dbe0); font-family: Archivo, ui-sans-serif, system-ui, sans-serif; color: var(--color-ink, #16212b); } .ds-nav-mark { font-size: 1.75rem; font-weight: 800; font-stretch: 72%; text-transform: uppercase; line-height: 1; } .ds-nav-links { display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0; font-weight: 600; } .ds-nav-links a { color: inherit; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.25em; text-decoration-color: transparent; transition: text-decoration-color 150ms ease; } .ds-nav-links a:focus-visible { outline: 3px solid var(--color-accent, #d91f26); outline-offset: 3px; border-radius: 2px; } @media (hover: hover) and (pointer: fine) { .ds-nav-links a:hover { text-decoration-color: currentColor; } } .ds-nav-cta { display: inline-flex; align-items: center; min-height: 3.25rem; padding: 0.85rem 1.6rem; border-radius: 999px; background: var(--color-accent, #d91f26); color: var(--color-ink, #16212b); font-weight: 700; line-height: 1.1; text-decoration: none; transition: background-color 150ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-nav-cta:active { transform: scale(0.97); } @media (hover: hover) and (pointer: fine) { .ds-nav-cta:hover { background: var(--color-accent-hover, #b5161d); } }"
+    },
+    {
+      "name": "Suwak przed/po",
+      "kind": "custom",
+      "refersTo": "compare",
+      "description": "Sygnaturowy komponent: obraz „po” przycinany clip-path, uchwyt przesuwany transformem, natywny range.",
+      "html": "<div class=\"ds-compare\"><div class=\"ds-compare-before\"></div><div class=\"ds-compare-after\"></div><span class=\"ds-compare-tag\" style=\"left:1rem\">Przed</span><span class=\"ds-compare-tag\" style=\"right:1rem\">Po</span><input class=\"ds-compare-range\" type=\"range\" min=\"0\" max=\"100\" value=\"50\" aria-label=\"Porównanie przed i po\" oninput=\"this.parentNode.style.setProperty('--pos', this.value + '%')\"><span class=\"ds-compare-handle\" aria-hidden=\"true\"><span class=\"ds-compare-knob\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m9 6-6 6 6 6M15 6l6 6-6 6\"/></svg></span></span></div>",
+      "css": ".ds-compare { --pos: 50%; position: relative; overflow: hidden; border-radius: 6px; aspect-ratio: 16 / 9; max-width: 32rem; background: var(--color-mist, #eef1f3); touch-action: pan-y; font-family: Archivo, ui-sans-serif, system-ui, sans-serif; } .ds-compare-before, .ds-compare-after { position: absolute; inset: 0; } .ds-compare-before { background: linear-gradient(135deg, #4d5a2a, #6b6a3a); } .ds-compare-after { background: linear-gradient(135deg, #8a3b28, #b5523a); clip-path: inset(0 0 0 var(--pos)); } .ds-compare-handle { position: absolute; inset: 0; transform: translateX(var(--pos)); pointer-events: none; } .ds-compare-handle::before { content: \"\"; position: absolute; top: 0; bottom: 0; left: -1.5px; width: 3px; background: #fff; } .ds-compare-knob { position: absolute; top: 50%; left: 0; width: 3rem; height: 3rem; margin: -1.5rem 0 0 -1.5rem; border-radius: 50%; background: #fff; color: #16212b; display: grid; place-items: center; box-shadow: 0 4px 14px rgb(15 24 32 / 0.25); } .ds-compare-range { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; } .ds-compare-range:focus-visible ~ .ds-compare-handle .ds-compare-knob { outline: 3px solid #d91f26; outline-offset: 3px; } .ds-compare-tag { position: absolute; bottom: 1rem; padding: 0.35rem 0.75rem; border-radius: 999px; background: rgb(15 24 32 / 0.78); color: #fff; font-size: 0.875rem; font-weight: 600; pointer-events: none; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Czysta robota",
+    "overview": "Mal-Dach wygląda jak firma dekarska, którą właściciel domu rozpoznaje w sekundę: białe tło, duże zdjęcia dachów, ciemny granat, jeden czerwony przycisk do dzwonienia w kolorze logo. Siła nie leży w odmienności, tylko w wykonaniu. Każdy element ma porządne wykończenie, równe odstępy i jedną funkcję. To strona, która robi to samo co konkurencja, ale czyściej i bez ściemy: bez punktorów z ptaszkami, bez dekoracyjnych ikonek, bez wymyślonych liczb i cen.\n\nGęstość jest umiarkowana i rytmiczna. Sekcje naprzemiennie białe, chłodno-szare i granatowe, każda z jednym wersalikowym nagłówkiem w wąskim Archivo i treścią w zwykłej szerokości tego samego kroju. Dowodem są zdjęcia (zdjęcia realizacji, suwak przed/po), a nie ozdobniki. Ruch jest oszczędny: elementy raz wchodzą przy pierwszym pokazaniu, a jedynym autorskim momentem jest suwak przed/po, który sam raz się przeciąga, żeby pokazać, że da się nim ruszać.\n\nZakres: kierunek „standard kategorii” (canon) użytkownik wybrał wyłącznie dla strony głównej (`makieta/index.html`). To decyzja dla tej powierzchni, nie stała preferencja marki; kolejne powierzchnie mogą dziedziczyć tokeny i komponenty, ale wybór formy dla nich jest otwarty. Docelowo system przechodzi 1:1 do motywu WordPress z Tailwind CSS (tokeny z bloku `@theme`).",
+    "keyCharacteristics": [
+      "Biel, chłodna mgła i granat-antracyt; jedna czerwień z logo zarezerwowana dla akcji.",
+      "Jeden krój (Archivo, zmienne osie): wąski wersalik w nagłówkach, normalna szerokość w tekście.",
+      "Przyciski-pigułki, karty i zdjęcia z łagodnym promieniem 6px.",
+      "Płasko na co dzień; cień tylko tam, gdzie coś leży nad zdjęciem lub nad treścią.",
+      "Telefon zawsze w zasięgu: przycisk w nawigacji, w hero, w pasie CTA i w dolnym pasku na telefonie."
+    ],
+    "rules": [
+      { "name": "The Red Means Action Rule", "body": "Czerwień akcji pojawia się tylko na kontrolkach akcji (przyciski telefonu) i jako sygnał interakcji (fokus, zaznaczenie, kursor). Nigdy na nagłówkach, ikonach, liniach dekoracyjnych, tłach sekcji ani na samym tekście. Reguła wynika z poprawki po przeglądzie: drugi kolor akcji to granat, nie inny odcień czerwieni. Czerwień marki (#fc3030) zostaje w logo; na przyciskach używamy jej o krok ciemniejszej wersji.", "section": "colors" },
+      { "name": "The White Text On Red Rule", "body": "Na czerwieni akcji (#d91f26) zawsze biały tekst: 5,03:1. Czysta czerwień logo (#fc3030) nie przechodzi AA ani z bielą (3,75:1), ani z granatem (4,36:1), dlatego nie jest tłem tekstu.", "section": "colors" },
+      { "name": "The Three Grounds Rule", "body": "Sekcje stoją na jednym z trzech teł: papier, mgła albo granat. Naprzemienność tych trzech robi rytm strony; czwarte tło sekcji nie istnieje.", "section": "colors" },
+      { "name": "The Narrow Caps Rule", "body": "Wąski wersalik (wdth 72, 800) jest zarezerwowany dla nagłówków, znaku słownego i cyfr. Tekst ciągły, etykiety i przyciski nigdy nie są wąskie ani wersalikowe.", "section": "typography" },
+      { "name": "The One Family Rule", "body": "Cała strona stoi na jednym kroju. Hierarchię robią szerokość, grubość i wielkość Archivo, nie drugi krój.", "section": "typography" },
+      { "name": "The Phone Within Reach Rule", "body": "Na każdej szerokości przycisk telefonu jest widoczny bez szukania: w nawigacji od 640px, w hero, w pasie CTA, a na telefonie i tablecie w dolnym pasku, który chowa się tylko wtedy, gdy na ekranie jest już inny przycisk telefonu.", "section": "layout" },
+      { "name": "The Flat Unless Floating Rule", "body": "Karty, panele i przyciski nie mają cienia. Cień dostaje tylko element, który unosi się nad zdjęciem albo nad treścią.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do używać czerwieni akcji (#d91f26) tylko na przyciskach akcji i jako sygnału fokusu, zawsze z białym tekstem.",
+      "Do stawiać każdą sekcję na papierze, mgle albo granacie i naprzemiennie je układać.",
+      "Do pisać nagłówki wąskim wersalikiem Archivo (wdth 72, 800), a resztę tekstu normalną szerokością.",
+      "Do dawać płaszczyznom 6px, a kontrolkom kształt pigułki.",
+      "Do pokazywać dowód zdjęciem: duże kadry dachów i elewacji, przed/po.",
+      "Do budować każdy ruch skillem „animate”: tylko transform, opacity i clip-path (jedyny wyjątek: akordeon FAQ przez grid-template-rows), krzywe z tokenów, stagger 60ms, hover tylko przy kursorze, wariant dla ograniczonego ruchu.",
+      "Do utrzymywać przycisk telefonu w zasięgu na każdej szerokości."
+    ],
+    "donts": [
+      "Don't stawiać granatowego tekstu na czerwieni, używać czystej czerwieni logo (#fc3030) jako tła tekstu ani dawać czerwieni na nagłówki, ikony, linie czy tła sekcji.",
+      "Don't dodawać punktorów z ptaszkami, kafelków z ikonkami ani ikon dekoracyjnych; ikony (inline SVG) są tylko funkcyjne: telefon, strzałka, chevron, menu, uchwyt suwaka.",
+      "Don't wpisywać wymyślonych liczb, cen, opinii, gwarancji ani lat na rynku; brakujące dane oznaczać znacznikiem `[DO UZUPEŁNIENIA]`.",
+      "Don't dodawać cieni kartom, panelom ani przyciskom; cień tylko dla elementu nad zdjęciem lub nad treścią.",
+      "Don't wprowadzać drugiego kroju pisma.",
+      "Don't traktować znaczników `[DO UZUPEŁNIENIA]`, zdjęć zastępczych ani listy źródeł Wikimedia jako stylu do powielania na nowych powierzchniach."
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "maldach",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i makieta/src/app.css -o makieta/assets/css/app.css --minify",
+    "watch:css": "tailwindcss -i makieta/src/app.css -o makieta/assets/css/app.css --watch",
+    "preview": "npx --yes serve makieta -l 4321"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}

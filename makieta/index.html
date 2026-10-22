@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mal-Dach – mycie i malowanie dachów i elewacji</title>
+  <meta name="description" content="Mal-Dach myje i maluje dachy oraz elewacje domów i wykonuje prace na wysokości. Zadzwoń albo zamów wycenę.">
+  <meta name="theme-color" content="#16212b">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="preload" as="image" href="assets/img/fb-dom-grafitowy-dach-dron.jpg">
+</head>
+<body>
+
+  <svg width="0" height="0" class="absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-drag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m9 6-6 6 6 6M15 6l6 6-6 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+
+  <a href="#tresc" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-white">Przejdź do treści</a>
+
+  <!-- Górny pasek -->
+  <div class="dark bg-night text-night-soft">
+    <div class="wrap flex min-h-10 items-center justify-between gap-6 py-2 text-sm">
+      <p class="hidden sm:block">Mycie i malowanie dachów i elewacji · Rzeszów, Podkarpacie i okolice</p>
+      <div class="flex items-center gap-6">
+        <a class="link text-white" href="tel:+48796881745">Tel. 796 881 745</a>
+        <span class="hidden md:inline">Czynne całą dobę</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nawigacja -->
+  <header class="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur-none">
+    <div class="wrap relative flex h-18 items-center justify-between gap-6">
+      <a href="#top" class="block shrink-0" aria-label="Mal-Dach, strona główna"><img src="assets/img/logo-mal-dach.png" width="600" height="400" alt="Mal-Dach" class="h-14 w-auto"></a>
+      <nav aria-label="Główna" class="hidden lg:block">
+        <ul class="flex items-center gap-8 font-semibold">
+          <li><a class="link decoration-transparent" href="#uslugi">Usługi</a></li>
+          <li><a class="link decoration-transparent" href="#przed-po">Przed i po</a></li>
+          <li><a class="link decoration-transparent" href="#jak-pracujemy">Jak pracujemy</a></li>
+          <li><a class="link decoration-transparent" href="#realizacje">Realizacje</a></li>
+          <li><a class="link decoration-transparent" href="#faq">Pytania</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="btn btn-accent hidden sm:inline-flex" href="tel:+48796881745"><svg class="size-5" aria-hidden="true"><use href="#i-phone"/></svg>Zadzwoń</a>
+        <button type="button" class="btn btn-ghost min-h-11 px-3 lg:hidden" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+          <svg class="size-6" aria-hidden="true"><use href="#i-menu"/></svg><span class="sr-only">Menu</span>
+        </button>
+      </div>
+      <nav id="menu" class="menu absolute inset-x-0 top-full border-b border-line bg-white px-5 pb-6 pt-2 shadow-lg lg:hidden" aria-label="Menu mobilne" data-menu>
+        <ul class="grid gap-1 text-lg font-semibold">
+          <li><a class="block py-3" href="#uslugi">Usługi</a></li>
+          <li><a class="block py-3" href="#przed-po">Przed i po</a></li>
+          <li><a class="block py-3" href="#jak-pracujemy">Jak pracujemy</a></li>
+          <li><a class="block py-3" href="#realizacje">Realizacje</a></li>
+          <li><a class="block py-3" href="#faq">Pytania</a></li>
+          <li><a class="block py-3" href="#wycena">Zamów wycenę</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc">
+
+    <!-- HERO -->
+    <section id="top" class="hero bg-white text-ink" aria-labelledby="hero-h" data-hero-section>
+      <div class="hero-band overflow-hidden"><img src="assets/img/fb-dom-grafitowy-dach-dron.jpg" width="1920" height="1080" alt="Dom z grafitowym dachem, realizacja Mal-Dach, widok z drona" class="h-full w-full object-cover object-[50%_60%]"></div>
+      <div class="wrap hero-body grid pt-10 lg:grid-cols-[1fr_27rem] lg:items-start">
+        <div>
+          <h1 id="hero-h" class="hero-in display text-[clamp(2.5rem,5.2vw,4.5rem)]" style="--i:0">Mycie i malowanie<br class="hidden sm:inline"> dachów i&nbsp;elewacji</h1>
+          <p class="hero-in mt-6 max-w-[48ch] text-lg text-ink-soft" style="--i:1">Odnawiamy dachy i elewacje na Podkarpaciu i w województwach sąsiednich. Malujemy natryskowo i tradycyjnie, na dachach pracujemy z liny.</p>
+          <div class="hero-in mt-8 flex flex-wrap items-center gap-4" style="--i:2">
+            <a class="btn btn-accent btn-lg w-full sm:w-auto" href="tel:+48796881745"><svg class="size-6 shrink-0" aria-hidden="true"><use href="#i-phone"/></svg><span class="text-left">Zadzwoń<span class="hidden sm:inline">: </span><span class="block whitespace-nowrap tabular-nums sm:inline">796 881 745</span></span></a>
+            <a class="btn btn-ghost btn-lg w-full text-ink sm:w-auto" href="#wycena">Zamów wycenę</a>
+          </div>
+          <ul class="hero-in mt-8 flex flex-wrap gap-x-6 gap-y-2 font-semibold">
+        <li>Bezpłatna wycena</li><li>Gwarancja na usługi</li><li>Dotrzymujemy terminów</li>
+      </ul>
+        </div>
+        <div id="wycena" class="hero-form relative rounded-card bg-white p-6 text-ink shadow-[0_24px_60px_rgb(22_33_43/0.22)] sm:p-7">
+          <h2 class="display text-3xl">Zamów wycenę</h2>
+          <p class="mt-2 text-ink-soft">Zostaw numer, oddzwonimy i umówimy bezpłatne oględziny.</p>
+          <form class="mt-5 grid gap-3" method="post" action="#wycena" data-quote-form>
+              <div>
+                <label for="f-imie" class="mb-1 block text-sm font-semibold">Imię</label>
+                <input id="f-imie" name="imie" class="field" type="text" autocomplete="given-name" required>
+                <p class="field-error mt-1" id="f-imie-err" hidden></p>
+              </div>
+              <div class="grid gap-3 sm:grid-cols-2">
+                <div>
+                  <label for="f-tel" class="mb-1 block text-sm font-semibold">Telefon</label>
+                  <input id="f-tel" name="telefon" class="field" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9 +()\-]{9,}" required>
+                  <p class="field-error mt-1" id="f-tel-err" hidden></p>
+                </div>
+                <div>
+                  <label for="f-miejsc" class="mb-1 block text-sm font-semibold">Miejscowość</label>
+                  <input id="f-miejsc" name="miejscowosc" class="field" type="text" autocomplete="address-level2" required>
+                  <p class="field-error mt-1" id="f-miejsc-err" hidden></p>
+                </div>
+              </div>
+              <fieldset>
+                <legend class="mb-2 text-sm font-semibold">Czego potrzebujesz?</legend>
+                <div class="flex flex-wrap gap-2">
+                  <label class="chip relative"><input type="checkbox" name="usluga" value="Mycie dachu"><span>Mycie dachu</span></label>
+                  <label class="chip relative"><input type="checkbox" name="usluga" value="Malowanie dachu"><span>Malowanie dachu</span></label>
+                  <label class="chip relative"><input type="checkbox" name="usluga" value="Mycie elewacji"><span>Mycie elewacji</span></label>
+                  <label class="chip relative"><input type="checkbox" name="usluga" value="Malowanie elewacji"><span>Malowanie elewacji</span></label>
+                  <label class="chip relative"><input type="checkbox" name="usluga" value="Prace na wysokości"><span>Prace na wysokości</span></label>
+                </div>
+              </fieldset>
+              <div>
+                <label for="f-opis" class="mb-1 block text-sm font-semibold">Wiadomość <span class="font-normal text-ink-soft">(opcjonalnie)</span></label>
+                <textarea id="f-opis" name="opis" class="field min-h-14 resize-y" rows="1"></textarea>
+              </div>
+              <label class="flex items-start gap-3 text-sm">
+                <input type="checkbox" name="zgoda" class="mt-0.5 size-5 shrink-0 accent-[#16212b]" required>
+                <span>Zgadzam się na kontakt w sprawie wyceny. <mark class="todo">[DO UZUPEŁNIENIA: klauzula RODO]</mark></span>
+              </label>
+              <p class="field-error" id="f-zgoda-err" hidden></p>
+              <button type="submit" class="btn btn-ink btn-lg mt-1 w-full">Wyślij zapytanie</button>
+              <p class="text-sm font-semibold text-ink" role="status" data-form-status hidden></p>
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- USŁUGI -->
+    <section id="uslugi" class="py-20 lg:py-28" aria-labelledby="uslugi-h">
+      <div class="wrap">
+        <div class="grid gap-6 lg:grid-cols-2 lg:items-end">
+          <h2 id="uslugi-h" data-reveal class="display text-[clamp(2.25rem,4vw,3.5rem)]">Nasze usługi</h2>
+          <p class="max-w-[52ch] text-lg text-ink-soft">Myjemy i malujemy dachy z dachówki i blachy oraz elewacje domów. Pracujemy też tam, gdzie trzeba wejść wysoko.</p>
+        </div>
+        <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
+          <li data-reveal style="--i:0" class="lg:col-span-2">
+            <a href="#wycena" data-service="Mycie dachu" class="card-link group block h-full overflow-hidden rounded-card bg-mist">
+              <img src="assets/img/fb-dachowka-zblizenie.jpg" width="1920" height="1080" loading="lazy" alt="Dachówka ceramiczna z bliska, realizacja Mal-Dach" class="aspect-[4/3] w-full object-cover">
+              <div class="p-6"><h3 class="display text-2xl">Mycie dachów</h3><p class="mt-2 text-ink-soft">Usuwamy mech, glony i brud z dachówki i blachy.</p><span class="card-cta link mt-4 inline-flex items-center gap-2 font-bold">Zapytaj o wycenę <svg class="size-5" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+            </a>
+          </li>
+          <li data-reveal style="--i:1" class="lg:col-span-2">
+            <a href="#wycena" data-service="Malowanie dachu" class="card-link group block h-full overflow-hidden rounded-card bg-mist">
+              <img src="assets/img/fb-dom-czerwony-dach-dron.jpg" width="1280" height="720" loading="lazy" alt="Dom z czerwonym dachem po malowaniu, realizacja Mal-Dach, widok z drona" class="aspect-[4/3] w-full object-cover">
+              <div class="p-6"><h3 class="display text-2xl">Malowanie dachów</h3><p class="mt-2 text-ink-soft">Malujemy dachy z blachy i dachówki, natryskowo i tradycyjnie.</p><span class="card-cta link mt-4 inline-flex items-center gap-2 font-bold">Zapytaj o wycenę <svg class="size-5" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+            </a>
+          </li>
+          <li data-reveal style="--i:2" class="lg:col-span-2">
+            <a href="#wycena" data-service="Mycie elewacji" class="card-link group block h-full overflow-hidden rounded-card bg-mist">
+              <img src="assets/img/fb-dom-czarny-dach.jpg" width="1920" height="1440" loading="lazy" alt="Dom z jasną elewacją i czarnym dachem, realizacja Mal-Dach" class="aspect-[4/3] w-full object-cover">
+              <div class="p-6"><h3 class="display text-2xl">Mycie elewacji</h3><p class="mt-2 text-ink-soft">Myjemy elewacje domów i budynków.</p><span class="card-cta link mt-4 inline-flex items-center gap-2 font-bold">Zapytaj o wycenę <svg class="size-5" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+            </a>
+          </li>
+          <li data-reveal style="--i:3" class="lg:col-span-3">
+            <a href="#wycena" data-service="Malowanie elewacji" class="card-link group block h-full overflow-hidden rounded-card bg-mist">
+              <img src="assets/img/fb-budynek-zolty-dron.jpg" width="1920" height="1080" loading="lazy" alt="Budynek z żółtą elewacją i bordowym dachem, realizacja Mal-Dach, widok z drona" class="aspect-[16/9] w-full object-cover">
+              <div class="p-6"><h3 class="display text-2xl">Malowanie elewacji</h3><p class="mt-2 text-ink-soft">Malujemy elewacje natryskowo i tradycyjnie.</p><span class="card-cta link mt-4 inline-flex items-center gap-2 font-bold">Zapytaj o wycenę <svg class="size-5" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+            </a>
+          </li>
+          <li data-reveal style="--i:4" class="sm:col-span-2 lg:col-span-3">
+            <a href="#wycena" data-service="Prace na wysokości" class="card-link group block h-full overflow-hidden rounded-card bg-mist">
+              <img src="assets/img/fb-blok-dach-dron.jpg" width="1950" height="610" loading="lazy" alt="Dach bloku mieszkalnego, realizacja Mal-Dach, widok z drona" class="aspect-[16/9] w-full object-cover">
+              <div class="p-6"><h3 class="display text-2xl">Prace na wysokości</h3><p class="mt-2 text-ink-soft">Pracujemy z liny na dachach i wysokich budynkach.</p><span class="card-cta link mt-4 inline-flex items-center gap-2 font-bold">Zapytaj o wycenę <svg class="size-5" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+            </a>
+          </li>
+        </ul>
+        <p data-reveal class="mt-10 text-lg">Robimy też: <b>mycie kostki brukowej</b>, <b>montaż śniegołapów</b> oraz <b>naprawę i wymianę rynien</b>.</p>
+      </div>
+    </section>
+
+    <!-- PRZED I PO -->
+    <section id="przed-po" class="bg-mist py-20 lg:py-28" aria-labelledby="pp-h">
+      <div class="wrap grid gap-10 lg:grid-cols-[22rem_1fr] lg:items-center">
+        <div>
+          <h2 id="pp-h" data-reveal class="display text-[clamp(2.25rem,4vw,3.5rem)]">Przed i po</h2>
+          <p class="mt-5 text-lg text-ink-soft">Przesuń suwak, żeby porównać dach przed myciem i po malowaniu.</p>
+          <p class="mt-5 text-sm text-ink-soft">Na makiecie dwa różne zdjęcia zastępcze. Docelowo pary przed/po z realizacji Mal-Dach: <mark class="todo">[DO UZUPEŁNIENIA]</mark></p>
+        </div>
+        <div data-reveal style="--i:1" class="compare" data-compare>
+          <img src="assets/img/moss-on-tiled-roof-at-nuthurst-west.jpg" width="1600" height="900" loading="lazy" alt="Zdjęcie zastępcze: dachówka porośnięta mchem przed myciem">
+          <img class="compare__after" src="assets/img/low-pressure-roof-washing.jpg" width="1330" height="858" loading="lazy" alt="Zdjęcie zastępcze: dach w trakcie mycia, wyraźnie czystszy pas dachówek">
+          <span class="compare__tag left-4">Przed</span>
+          <span class="compare__tag right-4">Po</span>
+          <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Porównanie przed i po: przesuń, aby odsłonić stan po" data-compare-range>
+          <span class="compare__handle" aria-hidden="true"><span class="compare__knob"><svg class="size-6" aria-hidden="true"><use href="#i-drag"/></svg></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DLACZEGO WARTO -->
+    <section class="py-20 lg:py-28" aria-labelledby="why-h">
+      <div class="wrap grid gap-12 lg:grid-cols-2 lg:items-center">
+        <img data-reveal src="assets/img/a-moss-covered-roof-sedgwick-lane-nuthurst.jpg" width="1600" height="1066" loading="lazy" alt="Zdjęcie zastępcze: dom z dachem z dachówki porośniętym mchem" class="aspect-[4/3] w-full rounded-card object-cover">
+        <div>
+          <h2 id="why-h" data-reveal class="display text-[clamp(2.25rem,4vw,3.5rem)]">Dlaczego warto odnowić dach</h2>
+          <div class="mt-8 grid gap-6">
+            <div data-reveal style="--i:1">
+              <h3 class="text-[1.375rem] font-bold leading-tight">Mech trzyma wilgoć</h3>
+              <p class="mt-1 text-ink-soft">Mech, glony i porosty magazynują wodę na dachówce. Zimą ta woda zamarza i kruszy powierzchnię pokrycia.</p>
+            </div>
+            <div data-reveal style="--i:2">
+              <h3 class="text-[1.375rem] font-bold leading-tight">Słońce zjada kolor</h3>
+              <p class="mt-1 text-ink-soft">Promieniowanie UV z czasem wypłukuje kolor i powłokę ochronną. Dach blaknie i zaczyna chłonąć wodę.</p>
+            </div>
+            <div data-reveal style="--i:3">
+              <h3 class="text-[1.375rem] font-bold leading-tight">Odnowienie zamiast wymiany</h3>
+              <p class="mt-1 text-ink-soft">Jeśli pokrycie jest w dobrym stanie technicznym, mycie i malowanie przywraca mu wygląd i ochronę bez kosztów nowego dachu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap mt-16 grid gap-6 md:grid-cols-2">
+        <div data-reveal class="rounded-card bg-ink p-8 text-white lg:p-10">
+          <h3 class="display text-3xl">Sprzęt i technika</h3>
+          <p class="mt-3 text-night-soft">Myjemy ciśnieniowo, malujemy natryskowo i tradycyjnie, na dachach pracujemy z liny, w uprzęży.</p>
+          <p class="dark mt-4 text-night-soft">Dokładna lista sprzętu: <mark class="todo">[DO UZUPEŁNIENIA]</mark></p>
+        </div>
+        <div data-reveal style="--i:1" class="rounded-card bg-mist p-8 text-ink lg:p-10">
+          <h3 class="display text-3xl">Terminowość</h3>
+          <p class="mt-3">Termin ustalamy przy wycenie i dotrzymujemy go. Nie zostawiamy rozgrzebanego dachu.</p>
+          <p class="mt-4">Typowy czas realizacji: <mark class="todo">[DO UZUPEŁNIENIA]</mark></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAK PRACUJEMY -->
+    <section id="jak-pracujemy" class="dark bg-ink py-20 text-white lg:py-28" aria-labelledby="jak-h">
+      <div class="wrap">
+        <h2 id="jak-h" data-reveal class="display text-[clamp(2.25rem,4vw,3.5rem)]">Jak pracujemy</h2>
+        <ol class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <li data-reveal style="--i:0">
+            <span class="display block text-6xl text-white" aria-hidden="true">1</span>
+            <h3 class="mt-4 text-[1.375rem] font-bold leading-tight">Telefon</h3>
+            <p class="mt-2 text-night-soft">Mówisz, co jest do zrobienia: dach, elewacja, wysokość budynku. Umawiamy oględziny.</p>
+          </li>
+          <li data-reveal style="--i:1">
+            <span class="display block text-6xl text-white" aria-hidden="true">2</span>
+            <h3 class="mt-4 text-[1.375rem] font-bold leading-tight">Oględziny i wycena</h3>
+            <p class="mt-2 text-night-soft">Sprawdzamy stan pokrycia, liczymy powierzchnię, podajemy cenę i termin.</p>
+          </li>
+          <li data-reveal style="--i:2">
+            <span class="display block text-6xl text-white" aria-hidden="true">3</span>
+            <h3 class="mt-4 text-[1.375rem] font-bold leading-tight">Mycie</h3>
+            <p class="mt-2 text-night-soft">Usuwamy mech, glony i brud. Powierzchnia musi wyschnąć przed malowaniem.</p>
+          </li>
+          <li data-reveal style="--i:3">
+            <span class="display block text-6xl text-white" aria-hidden="true">4</span>
+            <h3 class="mt-4 text-[1.375rem] font-bold leading-tight">Malowanie</h3>
+            <p class="mt-2 text-night-soft">Malujemy w wybranym kolorze, sprawdzamy obróbki i sprzątamy po sobie.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- REALIZACJE -->
+    <section id="realizacje" class="py-20 lg:py-28" aria-labelledby="real-h">
+      <div class="wrap">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <h2 id="real-h" data-reveal class="display text-[clamp(2.25rem,4vw,3.5rem)]">Realizacje</h2>
+          <p class="max-w-[46ch] text-ink-soft">Zdjęcia z naszych realizacji. Miejscowości i zakres prac uzupełnimy przy każdym zdjęciu.</p>
+        </div>
+        <ul class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <li data-reveal style="--i:0" class="relative overflow-hidden rounded-card lg:row-span-2">
+            <img src="assets/img/fb-szkola-dron.jpg" width="1280" height="720" loading="lazy" alt="Budynki szkolne z nowymi dachami, realizacja Mal-Dach, widok z drona" class="h-full min-h-72 w-full object-cover">
+            <p class="absolute inset-x-3 bottom-3 rounded bg-white/95 px-3 py-2 text-sm"><b>Jedna z pierwszych realizacji tego roku</b> · <mark class="todo">[miejscowość]</mark></p>
+          </li>
+          <li data-reveal style="--i:1" class="relative overflow-hidden rounded-card">
+            <img src="assets/img/fb-budynek-brazowy-dach.jpg" width="1920" height="1080" loading="lazy" alt="Budynek z brązowym dachem z blachy, realizacja Mal-Dach" class="aspect-[4/3] w-full object-cover">
+            <p class="absolute inset-x-3 bottom-3 rounded bg-white/95 px-3 py-2 text-sm"><b>Dach z blachy</b> · <mark class="todo">[miejscowość]</mark></p>
+          </li>
+          <li data-reveal style="--i:2" class="relative overflow-hidden rounded-card">
+            <img src="assets/img/fb-blok-dach-dron-2.jpg" width="1950" height="610" loading="lazy" alt="Dach bloku mieszkalnego po malowaniu, realizacja Mal-Dach, widok z drona" class="aspect-[4/3] w-full object-cover">
+            <p class="absolute inset-x-3 bottom-3 rounded bg-white/95 px-3 py-2 text-sm"><b>Dach bloku</b> · <mark class="todo">[miejscowość]</mark></p>
+          </li>
+          <li data-reveal style="--i:3" class="relative overflow-hidden rounded-card">
+            <img src="assets/img/fb-kalenica-dachowka.jpg" width="1152" height="2048" loading="lazy" alt="Kalenica dachu z pomarańczowej dachówki, realizacja Mal-Dach" class="aspect-[4/3] w-full object-cover object-[50%_40%]">
+            <p class="absolute inset-x-3 bottom-3 rounded bg-white/95 px-3 py-2 text-sm"><b>Dachówka ceramiczna</b> · <mark class="todo">[miejscowość]</mark></p>
+          </li>
+          <li data-reveal style="--i:4" class="relative overflow-hidden rounded-card">
+            <img src="assets/img/fb-dom-grafitowy-dach-dron.jpg" width="1920" height="1080" loading="lazy" alt="Dom z grafitowym dachem, realizacja Mal-Dach, widok z drona" class="aspect-[4/3] w-full object-cover">
+            <p class="absolute inset-x-3 bottom-3 rounded bg-white/95 px-3 py-2 text-sm"><b>Dom jednorodzinny</b> · <mark class="todo">[miejscowość]</mark></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KALKULATOR -->
+    <section class="bg-mist py-20 lg:py-24" aria-labelledby="calc-h" data-calc hidden>
+      <div class="wrap grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <h2 id="calc-h" data-reveal class="display text-[clamp(2.25rem,4vw,3.5rem)]">Policz powierzchnię dachu</h2>
+          <p class="mt-5 max-w-[48ch] text-lg text-ink-soft">Podaj wymiary domu i kąt dachu. Liczymy z okapem 50&nbsp;cm z każdej strony. To przybliżenie, dokładny pomiar robimy na miejscu.</p>
+        </div>
+        <div data-reveal style="--i:1" class="rounded-card bg-white p-6 sm:p-8">
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <label class="block"><span class="mb-1 block text-sm font-semibold">Długość domu (m)</span><input class="field tabular-nums" type="number" inputmode="decimal" min="3" max="60" step="0.5" value="12" data-calc-length></label>
+            <label class="block"><span class="mb-1 block text-sm font-semibold">Szerokość domu (m)</span><input class="field tabular-nums" type="number" inputmode="decimal" min="3" max="40" step="0.5" value="9" data-calc-width></label>
+            <label class="col-span-2 block sm:col-span-1"><span class="mb-1 block text-sm font-semibold">Kąt dachu</span>
+              <select class="field tabular-nums" data-calc-angle><option value="20">20°</option><option value="25">25°</option><option value="30">30°</option><option value="35" selected>35°</option><option value="40">40°</option><option value="45">45°</option></select>
+            </label>
+          </div>
+          <div class="mt-6 flex flex-wrap items-end justify-between gap-4 border-t border-line pt-6">
+            <p aria-live="polite"><span class="block text-sm text-ink-soft">Powierzchnia dachu około</span><output class="display text-5xl normal-case tabular-nums" data-calc-result>159 m²</output></p>
+            <button type="button" class="btn btn-ink" data-calc-add>Dodaj do zapytania</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 lg:py-28" aria-labelledby="faq-h">
+      <div class="wrap grid gap-10 lg:grid-cols-[22rem_1fr]">
+        <h2 id="faq-h" data-reveal class="display text-[clamp(2.25rem,4vw,3.5rem)]">Częste pytania</h2>
+        <div class="divide-y divide-line border-y border-line" data-faq>
+          <div class="faq__item">
+            <h3><button type="button" class="flex w-full items-center justify-between gap-6 py-5 text-left text-lg font-bold" aria-expanded="false" aria-controls="faq-1">Ile trwa mycie i malowanie dachu?<svg class="faq__chev size-6 shrink-0" aria-hidden="true"><use href="#i-chev"/></svg></button></h3>
+            <div id="faq-1" class="faq__panel" role="region"><div><p class="pb-5 text-ink-soft">Zależy od powierzchni i pogody. Typowo: <mark class="todo">[DO UZUPEŁNIENIA]</mark>. Dokładny termin podajemy przy wycenie.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button type="button" class="flex w-full items-center justify-between gap-6 py-5 text-left text-lg font-bold" aria-expanded="false" aria-controls="faq-2">Kiedy można malować dach?<svg class="faq__chev size-6 shrink-0" aria-hidden="true"><use href="#i-chev"/></svg></button></h3>
+            <div id="faq-2" class="faq__panel" role="region"><div><p class="pb-5 text-ink-soft">Malujemy na suchą powierzchnię, przy odpowiedniej temperaturze i bez deszczu. Sezon w naszym regionie: <mark class="todo">[DO UZUPEŁNIENIA]</mark>.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button type="button" class="flex w-full items-center justify-between gap-6 py-5 text-left text-lg font-bold" aria-expanded="false" aria-controls="faq-3">Czy potrzebne jest rusztowanie?<svg class="faq__chev size-6 shrink-0" aria-hidden="true"><use href="#i-chev"/></svg></button></h3>
+            <div id="faq-3" class="faq__panel" role="region"><div><p class="pb-5 text-ink-soft">Na dachach zwykle pracujemy z liny, w uprzęży, więc rusztowanie nie jest potrzebne. Czy w Twoim przypadku będzie potrzebne, ocenimy na oględzinach.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button type="button" class="flex w-full items-center justify-between gap-6 py-5 text-left text-lg font-bold" aria-expanded="false" aria-controls="faq-4">Jakie dachy malujecie?<svg class="faq__chev size-6 shrink-0" aria-hidden="true"><use href="#i-chev"/></svg></button></h3>
+            <div id="faq-4" class="faq__panel" role="region"><div><p class="pb-5 text-ink-soft">Dachy z dachówki i z blachy. Szczegóły dotyczące Twojego pokrycia ustalimy przy wycenie: <mark class="todo">[DO UZUPEŁNIENIA: pełna lista pokryć]</mark></p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button type="button" class="flex w-full items-center justify-between gap-6 py-5 text-left text-lg font-bold" aria-expanded="false" aria-controls="faq-5">Jak wygląda wycena?<svg class="faq__chev size-6 shrink-0" aria-hidden="true"><use href="#i-chev"/></svg></button></h3>
+            <div id="faq-5" class="faq__panel" role="region"><div><p class="pb-5 text-ink-soft">Dzwonisz lub zostawiasz numer, przyjeżdżamy na oględziny i podajemy cenę oraz termin. Wycena jest bezpłatna.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAS CTA -->
+    <section class="bg-mist py-16 lg:py-20" aria-labelledby="cta-h" data-has-phone>
+      <div class="wrap grid gap-8">
+        <div>
+          <h2 id="cta-h" data-reveal class="display text-[clamp(2.25rem,4.5vw,3.75rem)] text-ink">Zadzwoń i umów oględziny</h2>
+          <p class="mt-3 text-lg text-ink">Powiedz, co jest do zrobienia. Podamy termin i cenę po oględzinach.</p>
+        </div>
+        <div data-reveal style="--i:2" class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+          <a class="btn btn-accent btn-lg w-full sm:w-auto" href="tel:+48796881745"><svg class="size-6 shrink-0" aria-hidden="true"><use href="#i-phone"/></svg><span class="text-left">Zadzwoń<span class="hidden sm:inline">: </span><span class="block whitespace-nowrap tabular-nums sm:inline">796 881 745</span></span></a>
+          <a class="btn btn-ghost btn-lg w-full text-ink sm:w-auto" href="#wycena">Zamów wycenę</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STOPKA -->
+  <footer class="dark bg-night py-16 text-night-soft" data-has-phone>
+    <div class="wrap grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <p class="inline-block rounded-card bg-white px-4 py-3"><img src="assets/img/logo-mal-dach.png" width="600" height="400" alt="Mal-Dach" class="h-14 w-auto" loading="lazy"></p>
+        <p class="mt-3 max-w-[30ch]">Mycie i malowanie dachów i elewacji, prace na wysokości.</p>
+      </div>
+      <nav aria-label="Usługi w stopce">
+        <p class="font-bold text-white">Usługi</p>
+        <ul class="mt-3 grid gap-2">
+          <li><a class="link" href="#uslugi">Mycie dachów</a></li>
+          <li><a class="link" href="#uslugi">Malowanie dachów</a></li>
+          <li><a class="link" href="#uslugi">Mycie elewacji</a></li>
+          <li><a class="link" href="#uslugi">Malowanie elewacji</a></li>
+          <li><a class="link" href="#uslugi">Prace na wysokości</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Strona w stopce">
+        <p class="font-bold text-white">Strona</p>
+        <ul class="mt-3 grid gap-2">
+          <li><a class="link" href="#przed-po">Przed i po</a></li>
+          <li><a class="link" href="#jak-pracujemy">Jak pracujemy</a></li>
+          <li><a class="link" href="#realizacje">Realizacje</a></li>
+          <li><a class="link" href="#faq">Pytania</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="font-bold text-white">Kontakt</p>
+        <ul class="mt-3 grid gap-2">
+          <li>Telefon: <a class="link" href="tel:+48796881745">796 881 745</a>, <a class="link" href="tel:+48723913039">723 913 039</a></li>
+          <li>E-mail: <mark class="todo">[DO UZUPEŁNIENIA]</mark></li>
+          <li>Obszar: Podkarpacie i województwa sąsiednie</li>
+          <li><a class="link" href="https://www.facebook.com/p/Mal-Dach-61572974556927/">Mal-Dach na Facebooku</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap mt-12 flex flex-col gap-4 border-t border-white/15 pt-6 text-sm sm:flex-row sm:items-start sm:justify-between">
+      <p>© 2026 Mal-Dach · <mark class="todo">[DO UZUPEŁNIENIA: polityka prywatności]</mark></p>
+      <details class="credits max-w-[70ch]">
+        <summary class="cursor-pointer text-white">Źródła zdjęć</summary>
+        <ul class="mt-3 grid gap-1">
+          <li>Zdjęcia realizacji: Mal-Dach (strona firmy na Facebooku).</li>
+          <li>Zdjęcia zastępcze w sekcjach „Przed i po” i „Dlaczego warto”: „Moss on tiled roof at Nuthurst” i „A moss covered roof, Sedgwick Lane, Nuthurst”, Acabashi, CC BY-SA 4.0; „Low Pressure Roof Washing”, S. Buckalew, CC BY-SA 3.0 (Wikimedia Commons).</li>
+        </ul>
+      </details>
+    </div>
+  </footer>
+
+  <!-- Dolny pasek z telefonem (telefon i tablet) -->
+  <div class="callbar fixed inset-x-0 bottom-0 z-30 flex items-center gap-3 border-t border-line bg-white px-4 pt-3 lg:hidden" data-callbar>
+    <a class="btn btn-accent grow" href="tel:+48796881745"><svg class="size-5" aria-hidden="true"><use href="#i-phone"/></svg>Zadzwoń</a>
+    <a class="btn btn-ink" href="#wycena">Wycena</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

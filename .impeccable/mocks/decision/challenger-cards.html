@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&family=Roboto+Flex:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{background:#F6F4EF;color:#1B1B1B;font-family:"Roboto Flex",sans-serif;position:relative}
+nav{position:absolute;top:30px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:"Roboto Slab";font-weight:800;font-size:28px}
+nav ul{display:flex;gap:34px;list-style:none;font-size:17px}
+.copy{position:absolute;left:64px;top:170px;width:470px}
+h1{font-family:"Roboto Slab";font-weight:800;font-size:80px;line-height:.98;letter-spacing:-.02em}
+.lead{margin-top:20px;font-size:20px;line-height:1.45}
+.btn{display:inline-block;margin-top:30px;background:#B3261E;color:#fff;font-weight:600;font-size:20px;padding:20px 34px}
+.more{display:block;margin-top:18px;font-size:17px;text-decoration:underline}
+.card{position:absolute;width:300px;height:420px;background:#fff;padding:14px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.card .face{height:290px;display:grid;grid-template-columns:1fr 1fr}
+.card .face div{position:relative}
+.card .face span{position:absolute;left:8px;top:8px;background:#fff;font-size:12px;font-weight:600;padding:3px 6px}
+.card h3{font-family:"Roboto Slab";font-size:22px;margin-top:12px;text-transform:uppercase}
+.card p{font-size:14px;margin-top:4px}
+.disc{position:absolute;right:16px;top:280px;width:46px;height:46px;border-radius:50%;background:#1B1B1B;color:#fff;font-size:12px;font-weight:600;display:grid;place-items:center}
+.big{left:640px;top:150px;width:400px;height:560px;border:12px solid #B3261E;z-index:5;transform:rotate(-2deg)}
+.big .face{height:400px}
+.back{left:1060px;top:170px;width:320px;height:520px;background:#E9E6DD;transform:rotate(3deg);border:10px solid #1F4FA3}
+.back table{width:100%;border-collapse:collapse;margin-top:14px;font-size:15px;font-variant-numeric:tabular-nums}
+.back td{padding:9px 6px;border-bottom:1px solid #c8c3b8}
+.back td+td{text-align:right;font-weight:600}
+.flag{position:absolute;right:-12px;top:-12px;background:#D9A400;font-weight:600;font-size:13px;padding:8px 12px}
+</style></head><body>
+<nav><div class="logo">MALDACH</div><ul><li>Usługi</li><li>Realizacje</li><li>Jak pracujemy</li><li>Kontakt</li></ul></nav>
+<div class="copy">
+  <h1>Każdy dach<br>to nasza karta</h1>
+  <p class="lead">Myjemy i malujemy dachy oraz elewacje. Przejrzyj realizacje: z przodu przed i po, z tyłu metraż, kolor i czas pracy.</p>
+  <span class="btn">Zadzwoń</span><span class="more">Zobacz wszystkie karty</span>
+</div>
+<div class="card" style="left:560px;top:250px;transform:rotate(-9deg)"><div class="face"><div style="background:#7a7a6c"></div><div style="background:#8a3a2c"></div></div></div>
+<div class="card big"><div class="flag">Nowa karta</div>
+  <div class="face"><div style="background:#76786a"><span>Przed</span></div><div style="background:#8e3326"><span>Po</span></div></div>
+  <h3>[Miejscowość] · dach</h3><p>Zdjęcia zastępcze · karta nr 012</p><div class="disc">RAL<br>3009</div>
+</div>
+<div class="card back"><h3>Statystyki · nr 012</h3>
+  <table><tr><td>Powierzchnia</td><td>[DO UZUP.] m²</td></tr><tr><td>Kolor</td><td>RAL 3009</td></tr><tr><td>Pokrycie</td><td>dachówka</td></tr><tr><td>Mycie</td><td>[DO UZUP.]</td></tr><tr><td>Malowanie</td><td>[DO UZUP.]</td></tr><tr><td>Czas pracy</td><td>[DO UZUP.] dni</td></tr></table>
+</div>
+</body></html>

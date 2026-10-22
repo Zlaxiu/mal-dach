@@ -1,0 +1,216 @@
+@import "tailwindcss" source(none);
+@source "../index.html";
+@source "../assets/js";
+
+/* Archivo hostowany lokalnie (OFL 1.1), zmienne osie szerokości i grubości */
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  src: url("../fonts/archivo-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  src: url("../fonts/archivo-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Pozycja suwaka przed/po jako typowana właściwość, żeby dało się ją animować */
+@property --pos {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 50%;
+}
+
+/* Maldach · standard kategorii. Tokeny w jednym miejscu, przenoszone 1:1 do motywu. */
+@theme {
+  --color-ink: #16212b;
+  --color-ink-soft: #3b4752;
+  --color-paper: #ffffff;
+  --color-mist: #eef1f3;
+  --color-line: #d5dbe0;
+  /* Czerwień marki z logo Mal-Dach; na przyciskach jej o krok ciemniejsza wersja, żeby biały tekst miał ≥4,5:1 */
+  --color-brand: #fc3030;
+  --color-accent: #d91f26;
+  --color-accent-hover: #b5161d;
+  --color-night: #16212b;
+  --color-night-soft: #b9c4cd;
+
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 6px;
+
+  /* Krzywe ze skilla animate (Emil Kowalski) */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+    scrollbar-color: #9aa6b0 var(--color-mist);
+  }
+  body { font-size: 1rem; line-height: 1.6; -webkit-tap-highlight-color: transparent; caret-color: var(--color-accent); }
+  ::selection { background: var(--color-accent); color: #fff; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; border-radius: 2px; }
+  img { display: block; max-width: 100%; height: auto; }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+  input, textarea, select, button { font: inherit; color: inherit; }
+}
+
+@layer components {
+  /* Nagłówki: wąski wariant Archivo, wersaliki */
+  .display {
+    font-stretch: 72%;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.005em;
+    line-height: 1;
+  }
+  .wrap { width: min(100% - 2.5rem, 78rem); margin-inline: auto; }
+
+  /* Znacznik brakujących danych */
+  .todo { background: #fff1c2; color: #4a3500; padding: 0.05em 0.35em; border-radius: 3px; font-weight: 600; font-size: max(0.875em, 13px); }
+  .dark .todo { background: #4a3a10; color: #ffe08a; }
+
+  /* Przyciski */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+    min-height: 3.25rem; padding: 0.85rem 1.6rem; border-radius: 999px;
+    font-weight: 700; line-height: 1.1; text-decoration: none; cursor: pointer;
+    transition: transform 160ms var(--ease-out), background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-accent { background: var(--color-accent); color: #fff; }
+  .btn-ink { background: var(--color-ink); color: #fff; }
+  .btn-ghost { border: 2px solid currentColor; }
+  .btn-lg { min-height: 3.75rem; padding: 1rem 1.9rem; font-size: 1.125rem; }
+
+  .link { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.25em; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); transition: text-decoration-color 150ms ease; }
+
+  /* Pola formularza */
+  .field {
+    width: 100%; min-height: 3rem; padding: 0.7rem 0.9rem;
+    background: #fff; border: 1.5px solid var(--color-line); border-radius: var(--radius-card);
+    transition: border-color 150ms ease;
+  }
+  .field::placeholder { color: #6b7884; }
+  .field:focus-visible { outline: 3px solid color-mix(in srgb, var(--color-accent) 55%, transparent); outline-offset: 0; border-color: var(--color-accent); }
+  .field[aria-invalid="true"] { border-color: #b42318; }
+  .field-error { color: #b42318; font-size: 0.875rem; font-weight: 600; }
+  .chip input { position: absolute; opacity: 0; pointer-events: none; }
+  .chip span {
+    /* kompaktowe, żeby formularz zmieścił się w pierwszym ekranie */
+    display: inline-flex; align-items: center; min-height: 2.25rem; padding: 0.35rem 0.8rem;
+    border: 1.5px solid var(--color-line); border-radius: 999px; font-size: 1rem; cursor: pointer;
+    transition: background-color 150ms ease, border-color 150ms ease;
+  }
+  .chip input:checked + span { background: var(--color-ink); border-color: var(--color-ink); color: #fff; }
+  .chip input:focus-visible + span { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+  /* Suwak przed/po: obraz „po” przycinany clip-path, sterowany natywnym range */
+  .compare { position: relative; overflow: hidden; border-radius: var(--radius-card); aspect-ratio: 16 / 9; background: var(--color-mist); touch-action: pan-y; }
+  .compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .compare__after { clip-path: inset(0 0 0 var(--pos)); }
+  /* Uchwyt ma szerokość ramki, więc translateX w % przesuwa go o % ramki: sam transform, bez layoutu */
+  .compare__handle { position: absolute; inset: 0; transform: translateX(var(--pos)); pointer-events: none; }
+  .compare__handle::before { content: ""; position: absolute; top: 0; bottom: 0; left: -1.5px; width: 3px; background: #fff; }
+  .compare__knob { position: absolute; top: 50%; left: 0; width: 3rem; height: 3rem; margin: -1.5rem 0 0 -1.5rem; border-radius: 50%; background: #fff; color: var(--color-ink); display: grid; place-items: center; box-shadow: 0 4px 14px rgb(22 33 43 / 0.25); }
+  .compare__range { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+  .compare__range:focus-visible ~ .compare__handle .compare__knob { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+  .compare__tag { position: absolute; bottom: 1rem; padding: 0.35rem 0.75rem; border-radius: 999px; background: rgb(22 33 43 / 0.78); color: #fff; font-size: 0.875rem; font-weight: 600; pointer-events: none; }
+
+  /* Hero: pas zdjęcia w prawdziwych kolorach, pod nim treść; formularz nachodzi na zdjęcie na desktopie */
+  .hero-band { height: 16rem; }
+  .hero-body { padding-bottom: 3.5rem; gap: 3rem; }
+  @media (min-width: 64rem) {
+    .hero-band { height: 26rem; }
+    .hero-form { margin-top: -10rem; }
+  }
+
+  /* Znacznik <details> w stopce: własna strzałka zamiast domyślnego trójkąta przeglądarki */
+  .credits summary { list-style: none; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .credits summary::-webkit-details-marker { display: none; }
+  .credits summary::before {
+    content: ""; width: 0.45rem; height: 0.45rem; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg); transition: transform 200ms var(--ease-out);
+  }
+  .credits[open] summary::before { transform: rotate(45deg); }
+
+  /* FAQ: zwijanie przez grid-template-rows (zamiennik height dla akordeonu) */
+  .faq__panel { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows 200ms var(--ease-out), opacity 200ms var(--ease-out); }
+  .faq__panel > div { overflow: hidden; }
+  .faq__item[data-open] .faq__panel { grid-template-rows: 1fr; opacity: 1; }
+  .faq__chev { transition: transform 200ms var(--ease-out); }
+  .faq__item[data-open] .faq__chev { transform: rotate(180deg); }
+
+  /* Menu mobilne */
+  .menu { transform-origin: top; transition: opacity 200ms var(--ease-out), transform 200ms var(--ease-out), visibility 0s linear 0s; }
+  .menu:not([data-open]) { opacity: 0; transform: translateY(-8px); visibility: hidden; pointer-events: none; transition: opacity 150ms var(--ease-out), transform 150ms var(--ease-out), visibility 0s linear 150ms; }
+
+  /* Dolny pasek z telefonem: wjeżdża i wyjeżdża tą samą drogą */
+  .callbar { padding-bottom: calc(0.75rem + env(safe-area-inset-bottom)); transition: transform 200ms var(--ease-out), visibility 0s linear 0s; }
+  .callbar:not([data-show]) { transform: translateY(100%); visibility: hidden; transition: transform 200ms var(--ease-out), visibility 0s linear 200ms; }
+}
+
+/* Hover tylko na urządzeniach z kursorem */
+@media (hover: hover) and (pointer: fine) {
+  .btn-accent:hover { background: var(--color-accent-hover); }
+  .btn-ink:hover { background: #24323e; }
+  .btn-ghost:hover { background: rgb(255 255 255 / 0.12); }
+  .link:hover { text-decoration-color: currentColor; }
+  .chip span:hover { border-color: var(--color-ink); }
+  .card-link:hover .card-cta { text-decoration-color: currentColor; }
+}
+
+/* ——— Ruch sekcji. Stan ukryty istnieje tylko z JS (html.js) i bez prefers-reduced-motion. ——— */
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero: raz przy ładowaniu, animacje CSS (nie blokują wątku głównego).
+     Zdjęcie osiada ze skali 1.06, treść wjeżdża od dołu kaskadą, formularz dołącza na końcu. */
+  .hero-band img { animation: hero-settle 1100ms var(--ease-out) both; }
+  .hero-in { animation: hero-rise 600ms var(--ease-out) both; animation-delay: calc(var(--i, 0) * 70ms + 150ms); }
+  .hero-form { animation: hero-form 700ms var(--ease-out) 250ms both; }
+  /* Sekcje: raz przy wejściu w widok, stagger 60 ms */
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
+    transition-delay: calc(var(--i, 0) * 60ms);
+  }
+  .js [data-reveal].is-in { opacity: 1; transform: none; }
+
+  /* Jedyny autorski moment: przy pierwszym pokazaniu suwak raz „przeciąga się” sam, żeby było widać, że da się nim ruszać */
+  .compare.is-hinting { animation: compare-hint 1200ms var(--ease-in-out) both; }
+}
+@keyframes compare-hint {
+  0% { --pos: 50%; }
+  35% { --pos: 34%; }
+  70% { --pos: 64%; }
+  100% { --pos: 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Mniej i łagodniej: zostaje krycie, znika przesuwanie */
+  .hero-in, .hero-form { animation: fade 200ms ease both; }
+  .js [data-reveal] { opacity: 0; transition: opacity 200ms ease; }
+  .js [data-reveal].is-in { opacity: 1; }
+  .faq__panel, .faq__chev, .menu, .menu:not([data-open]) { transition-property: opacity, visibility; }
+  .menu:not([data-open]) { transform: none; }
+  .callbar, .callbar:not([data-show]) { transform: none; transition: opacity 200ms ease, visibility 0s linear 200ms; }
+  .callbar:not([data-show]) { opacity: 0; }
+}
+@keyframes hero-settle { from { transform: scale(1.06); } }
+@keyframes hero-rise { from { opacity: 0; transform: translateY(16px); } }
+@keyframes hero-form { from { opacity: 0; transform: translateY(24px); } }
+@keyframes fade { from { opacity: 0; } }

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{background:#F4F2EE;color:#1E1E1E;font-family:"Bricolage Grotesque",sans-serif;position:relative}
+nav{position:absolute;top:30px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:28px}
+nav ul{display:flex;gap:34px;list-style:none;font-size:17px}
+/* dom */
+.house{position:absolute;left:64px;top:120px;width:760px;height:700px;background:#DCD6CB}
+.roof{position:absolute;left:60px;top:120px;width:640px;height:250px;background:#7E2A21;clip-path:polygon(50% 0,100% 100%,0 100%);
+  background-image:repeating-linear-gradient(0deg,#7E2A21 0 26px,#6b231b 26px 30px)}
+.wall{position:absolute;left:120px;top:370px;width:520px;height:260px;background:#EFE9DE}
+.win{position:absolute;top:420px;width:90px;height:110px;background:#3c4a52}
+.door{position:absolute;left:345px;top:500px;width:70px;height:130px;background:#4A3328}
+.grass{position:absolute;left:0;right:0;bottom:0;height:70px;background:#6f7d4c}
+.label{position:absolute;left:64px;top:830px;font-size:15px}
+/* wachlarz */
+.fan{position:absolute;left:1010px;top:770px}
+.strip{position:absolute;left:-40px;bottom:0;width:80px;height:560px;transform-origin:50% 100%;padding:16px 12px;color:#fff;font-size:13px;font-weight:600}
+.strip b{display:block;font-size:18px}
+.rivet{position:absolute;left:-14px;bottom:14px;width:28px;height:28px;border-radius:50%;background:#C9C4BA;border:5px solid #8b867d;z-index:9}
+.copy{position:absolute;left:880px;top:150px;width:500px}
+h1{font-size:84px;font-weight:800;line-height:.95;letter-spacing:-.03em}
+.lead{margin-top:20px;font-size:20px;line-height:1.45}
+.pick{margin-top:26px;display:flex;align-items:center;gap:14px;font-size:17px}
+.pick i{width:34px;height:34px;background:#7E2A21}
+.btn{display:inline-block;margin-top:28px;background:#1E1E1E;color:#F4F2EE;font-weight:700;font-size:20px;padding:20px 34px}
+</style></head><body>
+<nav><div class="logo">Maldach</div><ul><li>Usługi</li><li>Kolory</li><li>Realizacje</li><li>Kontakt</li></ul></nav>
+<div class="house"><div class="roof"></div><div class="wall"></div><div class="win" style="left:180px"></div><div class="win" style="left:490px"></div><div class="door"></div><div class="grass"></div></div>
+<div class="label">Twój dom, nowy kolor dachu · podgląd poglądowy</div>
+<div class="copy">
+  <h1>Jaki kolor<br>dla dachu?</h1>
+  <p class="lead">Myjemy i malujemy dachy oraz elewacje. Wybierz kolor z wzornika i zobacz dom w nowym dachu, zanim zadzwonisz.</p>
+  <div class="pick"><i></i>RAL 3009 · czerwień tlenkowa</div>
+  <span class="btn">Zadzwoń po wycenę</span>
+</div>
+<div class="fan">
+  <div class="strip" style="background:#2F4A3A;transform:rotate(-58deg)"><b>6020</b>zieleń</div>
+  <div class="strip" style="background:#383E42;transform:rotate(-46deg)"><b>7016</b>antracyt</div>
+  <div class="strip" style="background:#4A3328;transform:rotate(-34deg)"><b>8017</b>brąz</div>
+  <div class="strip" style="background:#5c1f1a;transform:rotate(-22deg)"><b>3011</b>wiśnia</div>
+  <div class="strip" style="background:#7E2A21;transform:rotate(-10deg)"><b>3009</b>czerwień</div>
+  <div class="rivet"></div>
+</div>
+</body></html>
